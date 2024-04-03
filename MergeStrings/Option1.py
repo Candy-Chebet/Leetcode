@@ -1,3 +1,4 @@
+# Least Efficient
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         i,j = 0,0
@@ -10,3 +11,6 @@ class Solution:
         res.append(word2[j:])
 
         return "".join(res)
+    
+result = Solution().mergeAlternately('hello', 'world')
+print(result)
